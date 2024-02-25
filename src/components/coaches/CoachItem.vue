@@ -13,10 +13,7 @@
 </template>
 
 <script>
-import BaseBadge from '../ui/BaseBadge.vue';
-import BaseButton from '../ui/BaseButton.vue';
 export default {
-  components: { BaseButton, BaseBadge },
   props: ["id", "firstName", "lastName", "rate", "areas"],
   computed: {
     fullName() {
@@ -26,7 +23,7 @@ export default {
       return this.$route.path+ "/" + this.id + "/contact";
     },
     coachDetailsLink(){
-      return this.$route.path + this.id;
+      return this.$route.path + "/" +this.id;
 
     }
   },
