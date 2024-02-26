@@ -10,23 +10,23 @@
 <script>
 export default {
   props: {
+    mode: {
+      type: String,
+      required: false,
+      default: null
+    },
     link: {
       type: Boolean,
       required: false,
-      default: false,
+      default: false
     },
     to: {
       type: String,
       required: false,
-      default: "/",
-    },
-    mode: {
-      type: String,
-      required: false,
-      default: null,
-    },
-  },
-};
+      default: '/'
+    }
+  }
+}
 </script>
 
 <style scoped>
