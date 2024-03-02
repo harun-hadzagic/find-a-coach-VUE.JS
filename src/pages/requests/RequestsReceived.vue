@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import RequestItem from '../../components/requests/RequestItem.vue';
+import RequestItem from '../../components/requests/RequestItem';
 export default {
   components: { RequestItem },
   computed: {
